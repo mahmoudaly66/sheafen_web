@@ -80,9 +80,12 @@ header .rank .icon svg {
   padding: 0 0.8rem;
   font-size: 16px;
 }
+/* header .rank .flex {
+} */
+
 @media (max-width: 992px) {
   header .rank .title {
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
   }
   header .rank {
@@ -93,6 +96,16 @@ header .rank .icon svg {
 @media (max-width: 600px) {
   header .rank .title {
     flex-direction: column;
+  }
+  header .rank .flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  header .rank .title p {
+    text-align: center;
+  }
+  header .rank {
+    justify-content: center;
   }
 }
 
@@ -323,7 +336,7 @@ header .rank .icon svg {
 }
 
 .advantge-shafia .card1 {
-  background-color: rgba(0,0,0,3%);
+  background-color: rgba(0, 0, 0, 3%);
   border-radius: 10px;
   transition: 0.7s;
   padding-top: 1rem;
@@ -362,7 +375,7 @@ header .rank .icon svg {
 }
 
 .advantge-shafia .card2 {
-  background-color: rgba(0,0,0,3%);
+  background-color: rgba(0, 0, 0, 3%);
   border-radius: 10px;
   transition: 0.7s;
   padding-top: 1rem;
@@ -401,7 +414,7 @@ header .rank .icon svg {
 }
 
 .advantge-shafia .card3 {
-  background-color: rgba(0,0,0,3%);
+  background-color: rgba(0, 0, 0, 3%);
   border-radius: 10px;
   transition: 0.7s;
   padding-top: 1rem;
@@ -440,7 +453,7 @@ header .rank .icon svg {
 }
 
 .advantge-shafia .card4 {
-  background-color: rgba(0,0,0,3%);
+  background-color: rgba(0, 0, 0, 3%);
   border-radius: 10px;
   transition: 0.7s;
   padding-top: 1rem;
@@ -499,7 +512,6 @@ header .rank .icon svg {
   .advantge-shafia .vidio p {
     font-size: 15px;
   }
-
 }
 
 /* counter_sec */
@@ -534,10 +546,10 @@ header .rank .icon svg {
   .counter_sec .marg {
     padding: 1rem 0;
   }
-  .counter_sec .count1 h5{
+  .counter_sec .count1 h5 {
     font-size: 16px;
   }
-  .counter_sec .count1 h4{
+  .counter_sec .count1 h4 {
     font-size: 17px;
   }
 }
@@ -658,15 +670,11 @@ header .rank .icon svg {
   }
   .cards h4 {
     font-size: 20px;
-  }  
+  }
   .cards p {
     font-size: 14px;
   }
 }
-
-
-
-
 
 .cards {
   background-color: white;
@@ -696,13 +704,20 @@ header .rank .icon svg {
   width: 90%;
   margin-bottom: 1.5rem;
 }
-.phone .app{
+.phone .app {
   width: 30%;
   margin-bottom: 1rem;
 }
-.phone .applications h3{
-  font-family: 'bold';
-  
+.phone .applications h3 {
+  font-family: "bold";
+  padding: 2rem 0;
+}
+.phone .applications .tab-pane h4 {
+  font-family: "bold";
+}
+.phone .applications .tab-pane p {
+  font-family: "regular";
+  color: rgba(111, 119, 123, 1);
 }
 .nav-pills .nav-link {
   margin-bottom: 3rem;
@@ -719,7 +734,7 @@ header .rank .icon svg {
 .nav-pills .show > .nav-link {
   color: #fff;
   background-color: rgba(6, 121, 126, 1);
-  filter: drop-shadow(9px 16px 20px rgba(6, 121, 126, 1)) invert(0%);
+  filter: drop-shadow(0px 0px 20px rgba(6, 121, 126, 1)) invert(0%);
 }
 .nav-img {
   vertical-align: unset;
@@ -732,28 +747,61 @@ header .rank .icon svg {
 .phone .applications .nav {
   position: relative;
 }
-.phone .applications .nav-link:before {
+/* .phone .applications .std::before {
   position: absolute;
   content: "";
-  border-left: 3px solid rgba(6, 121, 126, 1);
-  width: 100px;
-  height: 50px;
+  border-left: 2px solid rgba(6, 121, 126, 1);
+  height: 48px;
   top: 60px;
-  left: 26px;
-}
-.phone .applications .nav-link:nth-child(2)::before {
+  left: 28px;
+} */
+ .phone .applications .par::after {
   position: absolute;
   content: "";
-  border-left: 3px solid rgba(6, 121, 126, 1);
-  width: 100px;
-  height: 50px;
+  border-left: 2px solid rgba(6, 121, 126, 1);
+  height: 48px;
+  left: 28px;
   top: 60px;
-  left: 26px;
-}
+} 
 
 .phone .applications .nav-link:last-child::before {
   content: unset;
   border-left: unset;
+}
+
+.phone .applications .leave{
+position: relative;
+margin: 5rem 0;
+}
+.phone .applications .leave .wave{
+position: absolute;
+width: 40%;
+    top: -77px;
+}
+.phone .applications .leave .wave2{
+position: absolute;
+width: 40%;
+bottom: -25px;
+left: 0;
+}
+
+
+@media (max-width: 992px) {
+  .phone .img {
+    width: 75%;
+  }
+  .phone .app {
+    width: 30%;
+  }
+  .phone .applications h3 {
+    font-size: 18px;
+  }
+  .phone .applications .tab-pane h4 {
+    font-size: 18px;
+  }
+  .phone .applications .tab-pane p {
+    font-size: 15px;
+  }
 }
 
 /* end phone */
@@ -950,7 +998,6 @@ header .rank .icon svg {
   position: relative;
 }
 
-
 .review .head {
   display: flex;
   flex-direction: column;
@@ -958,22 +1005,20 @@ header .rank .icon svg {
   text-align: center;
   padding: 2.5rem 0;
 }
-.review .head h5{
+.review .head h5 {
   color: rgba(6, 121, 126, 1);
   position: relative;
-  padding-bottom: .5rem;
-  font-family: 'regular';
+  padding-bottom: 0.5rem;
+  font-family: "regular";
 }
-.review .head h5::after{
+.review .head h5::after {
   position: absolute;
   content: "";
   border-bottom: 3px solid rgba(6, 121, 126, 1);
   width: 87px;
-    right: 18px;
-    bottom: 0;
-
+  right: 18px;
+  bottom: 0;
 }
-
 
 .review .head img {
   width: 10%;
@@ -1005,20 +1050,24 @@ header .rank .icon svg {
   width: 85%;
   height: 100%;
 }
-.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
-  content: 'unset';
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  content: "unset";
 }
-.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
-  content: 'unset';
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  content: "unset";
 }
-.swiper-button-next, .swiper-button-prev {
-background-color: rgba(5, 138, 148, 1);
-border-radius: 50%;
-color: white;
-padding: 1.2rem;
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: rgba(5, 138, 148, 1);
+  border-radius: 50%;
+  color: white;
+  padding: 1.2rem;
 }
-.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
-  opacity: .15;
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+  opacity: 0.15;
 }
 
 @media (max-width: 600px) {
@@ -1035,7 +1084,7 @@ padding: 1.2rem;
     font-size: 15px;
   }
   .review .head h5::after {
-right: 12px;
+    right: 12px;
   }
   .review .parent h5 {
     font-size: 18px;
@@ -1352,7 +1401,7 @@ right: 12px;
 }
 .lesson .title {
   color: white;
-  font-family: 'regular';
+  font-family: "regular";
   position: absolute;
   content: "";
   top: 30%;
@@ -1362,10 +1411,10 @@ right: 12px;
   align-items: center;
   flex-direction: column;
 }
-.lesson .title svg{
+.lesson .title svg {
   font-size: 12px;
 }
-.starss{
+.starss {
   background-image: url(../img/starss.png);
   background-size: cover;
   background-position: center center;
@@ -1373,12 +1422,6 @@ right: 12px;
   margin-top: 3rem;
   padding-bottom: 4rem;
 }
-
-
-
-
-
-
 
 @media (max-width: 1500px) {
 }
