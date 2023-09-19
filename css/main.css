@@ -212,7 +212,7 @@ header .rank .icon svg {
   background-color: rgba(6, 121, 126, 1);
   color: white;
   border: none;
-  padding: 10px 35px;
+  padding: 10px 30px;
   border-radius: 10px;
   box-shadow: none;
   margin-right: 1rem;
@@ -334,7 +334,13 @@ header .rank .icon svg {
   right: -10px;
   border-radius: 15px;
 }
-
+.advantge-shafia .back-vidio .vidioo{
+  position: absolute;
+  content: "";
+  width: 45px;
+  left: 45%;
+  bottom: 40%;
+}
 .advantge-shafia .card1 {
   background-color: rgba(0, 0, 0, 3%);
   border-radius: 10px;
@@ -1069,7 +1075,11 @@ left: 0;
 .swiper-button-prev.swiper-button-disabled {
   opacity: 0.15;
 }
-
+/* @media (max-width: 800px){
+  .swiper-button-next, .swiper-button-prev {
+    top: 94%;
+  }
+} */
 @media (max-width: 600px) {
   .review .head img {
     width: 20%;
@@ -1099,12 +1109,18 @@ left: 0;
 .swiper-rtl .swiper-button-next {
   right: 60px;
 }
-@media (max-width: 992px) {
+ @media (max-width: 992px) {
   .swiper-button-next,
   .swiper-button-prev {
     top: 91%;
   }
-}
+} 
+ @media (max-width: 780px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: 94%;
+  }
+} 
 
 /* end-arrticals */
 .end-arrticals {
@@ -1284,6 +1300,11 @@ left: 0;
 }
 .footer .list ul li {
   margin-bottom: 1.3rem;
+  color: white;
+}
+.footer  a {
+  color: white;
+  text-decoration: none;
 }
 /* num */
 .footer .num {
@@ -1367,11 +1388,12 @@ left: 0;
 .img-footer {
   width: 100%;
 }
-@media (max-width: 600px) {
-  .img-footer {
-    width: 75%;
+@media (max-width: 1300px) {
+  .footer .icon .h6{
+  font-size: 13px;
   }
-}
+  }
+
 @media (max-width: 600px) {
   .end {
     display: flex;
@@ -1387,7 +1409,12 @@ left: 0;
   .list2 {
     padding-inline-start: 25px;
   }
+  .img-footer {
+    width: 75%;
+  }
 }
+
+
 
 /* end footer */
 
