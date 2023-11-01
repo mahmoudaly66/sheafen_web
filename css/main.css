@@ -845,12 +845,12 @@ header .rank .icon svg {
   }
 }
 /* competitions */
-.competitions{
-   background-image: url(../img/race.png);
-   background-size: cover;
+.competitions {
+  background-image: url(../img/cover.png);
+  background-size: contain;
   width: 100%;
-  height: 100vh;
   background-repeat: no-repeat;
+  padding: 5rem 0;
 }
 .competitions .head {
   display: flex;
@@ -870,7 +870,6 @@ header .rank .icon svg {
   color: rgba(141, 141, 141, 1);
 }
 .cards-competitions {
-
   padding: 1rem;
   /* background-size: cover;
   background-position: center center;
@@ -880,6 +879,7 @@ header .rank .icon svg {
   background-color: white;
   border-radius: 10px;
   padding: 10px;
+  margin: 0.5rem 0;
 }
 .cards-competitions .card-competitions img {
   width: 100%;
@@ -896,7 +896,7 @@ header .rank .icon svg {
   font-size: 16px;
   font-family: "regular";
   color: rgba(111, 119, 123, 1);
-  margin: .5rem 0 .8rem;
+  margin: 0.5rem 0 0.8rem;
 }
 .cards-competitions .card-competitions .calender {
   display: flex;
@@ -904,19 +904,21 @@ header .rank .icon svg {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.cards-competitions .card-competitions .btn-success{
-width: 100%;
-background-color: rgba(6, 121, 126, 1);
-color: white;
-border-radius: 10px;
-box-shadow: none ;
-padding: .6rem 0;
-transition: all 0.7s ease-out;
+.cards-competitions .card-competitions .btn-success {
+  width: 100%;
+  background-color: rgba(6, 121, 126, 1);
+  color: white;
+  border-radius: 10px;
+  box-shadow: none;
+  padding: 0.6rem 0;
+  transition: all 0.7s ease-out;
+  font-family: "regular";
+  font-size: 16px;
 }
-.cards-competitions .card-competitions .btn-success:hover{
-background-color: transparent;
-color: rgba(6, 121, 126, 1);
-border: solid 1px rgba(6, 121, 126, 1);
+.cards-competitions .card-competitions .btn-success:hover {
+  background-color: transparent;
+  color: rgba(6, 121, 126, 1);
+  border: solid 1px rgba(6, 121, 126, 1);
 }
 .cards-competitions .card-competitions .calender svg {
   color: rgba(111, 119, 123, 1);
@@ -924,11 +926,45 @@ border: solid 1px rgba(6, 121, 126, 1);
 }
 .cards-competitions .card-competitions .calender p {
   color: black;
+  padding-top: 1rem;
   font-size: 14px;
   font-family: "regular";
 }
 .cards-competitions .card-competitions .calender span {
   color: rgba(111, 119, 123, 1);
+}
+.competitions .more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+.competitions .more .btn {
+  padding: 10px 30px;
+  border-radius: 10px;
+  background-color: rgba(178, 210, 63, 1);
+  color: white;
+  border: none;
+  box-shadow: none;
+  font-family: "regular";
+  transition: all 0.7s ease-out;
+}
+.competitions .more .btn:hover {
+  background-color: rgba(6, 121, 126, 1);
+}
+@media (max-width: 600px) {
+  .cards-competitions .card-competitions h4 {
+    font-size: 16px;
+  }
+  .cards-competitions .card-competitions p {
+    font-size: 13px;
+  }
+  .cards-competitions .card-competitions .calender p {
+    font-size: 12px;
+  }
+  .cards-competitions .card-competitions .btn-success {
+    font-size: 14px;
+  }
 }
 /* competitions */
 
@@ -1517,6 +1553,14 @@ border: solid 1px rgba(6, 121, 126, 1);
   margin-top: 3rem;
   padding-bottom: 4rem;
 }
+.starss-two {
+  background-image: url(../img/stars2.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+}
 
 /* scroll-up */
 #button {
@@ -1573,6 +1617,210 @@ border: solid 1px rgba(6, 121, 126, 1);
   color: black;
 }
 /* scroll-up */
+/* join-compitition */
+.join-compitition .img img {
+  width: 95%;
+}
+.join-compitition .date {
+  margin: 1rem 0;
+}
+.join-compitition .date .calender {
+  display: flex;
+  align-items: center;
+  background-color: rgba(226, 237, 238, 1);
+  border-radius: 7px;
+  padding: 0.5rem 0;
+}
+.join-compitition .detailss h4 {
+  font-family: "bold";
+  font-size: 20px;
+}
+.join-compitition .date .calender .svg {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0.6rem;
+}
+.join-compitition .date .calender .svg svg {
+  color: rgba(6, 121, 126, 1);
+}
+.join-compitition .date .start h6 {
+  font-family: "regular";
+  font-size: 14px;
+}
+.join-compitition .date .start h5 {
+  font-family: "regular";
+  font-size: 16px;
+}
+.join-compitition .date h4 {
+  font-family: "bold";
+  font-size: 16px;
+  margin: 2rem 0 1rem;
+}
+.join-compitition .date p {
+  font-family: "regular";
+  font-size: 15px;
+  color: rgba(141, 141, 141, 1);
+  width: 90%;
+}
+.join-compitition .date .btn-success{
+  width: 50%;
+  background-color: rgba(6, 121, 126, 1);
+  color: white;
+  border-radius: 10px;
+  box-shadow: none;
+  padding: 0.6rem 0;
+  transition: all 0.7s ease-out;
+  font-family: "regular";
+  font-size: 16px;
+  margin: 1rem 0;
+}
+.join-compitition .Contest-prizes .one-place{
+  width: 85%;
+  background-color: rgba(255, 209, 145, 1);
+  margin: 1.5rem 0 0;
+  padding: 10rem 0rem 1rem;
+  border-radius: 16px 16px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.join-compitition .Contest-prizes .third-place{
+  width: 85%;
+  background-color: rgba(202, 188, 245, 1);
+  margin: 1.5rem 0 0;
+  padding: 5rem 0rem 1rem;
+  border-radius: 16px 16px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.join-compitition .Contest-prizes .two-place{
+  width: 85%;
+  background-color: rgba(164, 203, 205, 1);
+  margin: 1.5rem 0 0;
+  padding: 5rem 0rem 1rem;
+  border-radius: 16px 16px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.join-compitition .Contest-prizes{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem;
+}
+.prizess{
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  margin: 2rem 0 0;
+}
+.prizess .one-place h5{
+  font-size: 17px;
+  font-family: "regular";
+}
+.prizess .one-place h6{
+  font-size: 12px;
+  font-family: "bold";
+}
+.prizess .two-place h5{
+  font-size: 17px;
+  font-family: "regular";
+}
+.prizess .two-place h6{
+  font-size: 12px;
+  font-family: "bold";
+}
+.prizess .third-place h5{
+  font-size: 17px;
+  font-family: "regular";
+}
+.prizess .third-place h6{
+  font-size: 12px;
+  font-family: "bold";
+}
+@media (max-width: 992px) {
+  .join-compitition .img img {
+    width: 75%;
+}
+.detailss{
+  margin: 1rem 0;
+}
+.join-compitition .date p {
+  width: 80%;
+}
+.join-compitition .date .btn-success {
+  width: 35%;
+}
+}
+@media (max-width: 600px){
+  .join-compitition .detailss h4 {
+    font-size: 16px;
+    margin: 0.5rem 0px;
+}
+.join-compitition .date p {
+    width: 95%;
+}
+.join-compitition .date .btn-success {
+  width: 45%;
+}
+}
+/* join-compitition */
+
+/* Connect-with-us */
+.start-form{
+  margin: 3rem 0;
+}
+.Connect-with-us .start-form h3{
+  font-size:35px ;
+  font-family: "bold";
+}
+.Connect-with-us .start-form h6{
+  font-size:15px ;
+  font-family: "regular";
+}
+.Connect-with-us .start-form form label{
+  font-size:15px ;
+  font-family: "regular";
+  margin: .5rem 0;
+}
+.Connect-with-us .start-form form .btn-dark{
+  font-size:15px ;
+  font-family: "regular";
+  border-radius: 10px;
+  padding: .5rem 1rem;
+  margin: 1rem 0;
+}
+.Connect-with-us .start-form form .form-check .form-check-input{
+  float: right;
+  margin-right: 0;
+}
+.form-check {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+}
+.Connect-with-us .img {
+  margin: 3rem 0;
+}
+.Connect-with-us .img img{
+  width: 100%;
+}
+/* Connect-with-us */
+
 
 @media (max-width: 1500px) {
 }
