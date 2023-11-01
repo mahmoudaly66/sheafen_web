@@ -6,6 +6,43 @@
 //loader
 
 
+
+
+
+
+
+
+
+
+
+
+//  دا زرار الى بيطلع
+var btn = $('#button');
+var image = $('.navbar-light .navbar-brand img');
+var link = $('.navbar-light .nav-item .nav-link');
+$(window).scroll(function () {
+  if ($(window).scrollTop() > 100) {
+    btn.addClass('show');
+    image.css('width', '50%');
+    link.addClass('change');
+  } else {
+    btn.removeClass('show');
+    image.css('width', '70%');
+    link.removeClass('change');
+  }
+});
+btn.on('click', function (e) {
+  e.preventDefault();
+  $('html, body').animate({ scrollTop: 0 }, '300');
+});
+
+
+// 
+
+
+
+
+
 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
   return new bootstrap.Tooltip(tooltipTriggerEl)
