@@ -1,0 +1,217 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --color-white: #fff;
+    --color-primary: #051b67;
+    --color-secound: #4a93c4;
+    --color-text: #2e2c34;
+    --color-pargraph: #707070;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    list-style: none;
+    direction: rtl;
+    height: 100vh;
+    scroll-behavior: smooth;
+    position: relative;
+    background-color: var(--body-color);
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  a {
+    text-decoration: none;
+
+}
+  
+  @font-face {
+    font-family: "light";
+    src: url("../fonts/alfont_com_Somar-Light.otf");
+  }
+  
+  @font-face {
+    font-family: "regular";
+    src: url("../fonts/alfont_com_Somar-Regular.otf");
+  }
+  
+  @font-face {
+    font-family: "medium";
+    src: url("../fonts/alfont_com_Somar-Medium.otf");
+  }
+  
+  @font-face {
+    font-family: "bold";
+    src: url("../fonts/alfont_com_Somar-Bold.otf");
+  }
+  @font-face {
+    font-family: "semibold";
+    src: url("../fonts/alfont_com_Somar-semiBold.otf");
+  }
+  .main-title h4 {
+    font-family: bold;
+    margin-top: 3rem;
+}
+ul.Departments {
+    margin-top: 1.5rem;
+}
+ul.Departments li {
+    
+    font-family: 'regular';
+    padding-bottom: 1rem;
+}
+ul.Departments ::marker {
+    color: #06797E;
+    font-size: 1.2rem;
+}
+.Latest-articles {
+    display: flex;
+    gap: 16px;
+   
+}
+.text-photo h4 {
+        font-size: 0.9rem;
+        font-family: 'bold';
+        width: 87%;
+}
+.text-photo p {
+    color: #8C8896;
+    font-family: 'regular';
+    margin-top: 1rem;
+}
+.photo img {
+    width: 8rem;
+    margin-top: 10px;
+}
+.photo {
+    display: flex;
+    flex-direction: column;
+   
+}
+.under-text {
+    margin-top: 2rem;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 51%;
+}
+
+.under-text h4 {
+    background-color: #d9d9d96b;
+    color: #605B6C;
+    padding: 0.5rem 0.5rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-family: 'light';
+}
+.photo-sec {
+    margin-top: 3rem;
+    
+}
+.photo-sec img {
+    width: 95%;
+}
+.text-sec p {
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-family: 'regular';
+    color: #605B6C;
+    width: 95%;
+}
+.text-sec h4 {
+    font-family: 'bold';
+}
+.line {
+    height: 1px;
+    width: 95%;
+}
+.master {
+    margin-right: 2rem;
+}
+p.more {
+    color: black;
+    font-family: 'regular';
+}
+p.more svg {
+    margin-inline-start: 7px;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page-link {
+    color: black !important;
+    padding: 1rem 2rem;
+    font-family: "regular";
+    transition: 0.7s;
+    border-radius: 10px;
+    margin-left: 11px;
+}
+.page-link:hover {
+    background-color: #06797E !important;
+    color: white !important;
+}
+li.page-item {
+    margin-left: 11px;
+    border-radius: 10px;
+}
+.head-blog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.head-blog h4 {
+    font-family: bold;
+}
+.logo-blog {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo-bl {
+    display: flex;
+    gap: 15px;
+}
+
+    .face a  svg{
+        color: black;
+        font-size: 1.5rem;
+        padding-left: 12px;
+        transition: 0.7s !important;
+      
+    }
+    
+    .face a svg :hover {
+        color: #06797E;
+    }
+    .text-small h6 {
+        font-family: "bold";
+
+    }
+    .text-small p {
+        font-family: "regular";
+
+    }
+    .photo-bus {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    p.gggg {
+        font-family: 'regular';
+        color: #605B6C;
+        margin-top: 28px;
+        font-size: 1.1rem;
+    }
+    .photo-bus img {
+        width: 85%;
+    }
