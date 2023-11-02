@@ -94,6 +94,12 @@ header .rank .icon svg {
   }
 }
 @media (max-width: 600px) {
+  .photo-bus img {
+    width: 100%;
+}
+  .under-text {
+    width: 100% !important;
+  }
   header .rank .title {
     flex-direction: column;
   }
