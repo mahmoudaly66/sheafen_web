@@ -1667,7 +1667,7 @@ header .rank .icon svg {
   color: rgba(141, 141, 141, 1);
   width: 90%;
 }
-.join-compitition .date .btn-success{
+.join-compitition .date .btn-success {
   width: 50%;
   background-color: rgba(6, 121, 126, 1);
   color: white;
@@ -1679,7 +1679,7 @@ header .rank .icon svg {
   font-size: 16px;
   margin: 1rem 0;
 }
-.join-compitition .Contest-prizes .one-place{
+.join-compitition .Contest-prizes .one-place {
   width: 85%;
   background-color: rgba(255, 209, 145, 1);
   margin: 1.5rem 0 0;
@@ -1691,7 +1691,7 @@ header .rank .icon svg {
   justify-content: center;
   text-align: center;
 }
-.join-compitition .Contest-prizes .third-place{
+.join-compitition .Contest-prizes .third-place {
   width: 85%;
   background-color: rgba(202, 188, 245, 1);
   margin: 1.5rem 0 0;
@@ -1703,7 +1703,7 @@ header .rank .icon svg {
   justify-content: center;
   text-align: center;
 }
-.join-compitition .Contest-prizes .two-place{
+.join-compitition .Contest-prizes .two-place {
   width: 85%;
   background-color: rgba(164, 203, 205, 1);
   margin: 1.5rem 0 0;
@@ -1715,98 +1715,99 @@ header .rank .icon svg {
   justify-content: center;
   text-align: center;
 }
-.join-compitition .Contest-prizes{
+.join-compitition .Contest-prizes {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 0.5rem;
 }
-.prizess{
+.prizess {
   display: flex;
   align-items: end;
   justify-content: center;
   margin: 2rem 0 0;
 }
-.prizess .one-place h5{
+.prizess .one-place h5 {
   font-size: 17px;
   font-family: "regular";
 }
-.prizess .one-place h6{
+.prizess .one-place h6 {
   font-size: 12px;
   font-family: "bold";
 }
-.prizess .two-place h5{
+.prizess .two-place h5 {
   font-size: 17px;
   font-family: "regular";
 }
-.prizess .two-place h6{
+.prizess .two-place h6 {
   font-size: 12px;
   font-family: "bold";
 }
-.prizess .third-place h5{
+.prizess .third-place h5 {
   font-size: 17px;
   font-family: "regular";
 }
-.prizess .third-place h6{
+.prizess .third-place h6 {
   font-size: 12px;
   font-family: "bold";
 }
 @media (max-width: 992px) {
   .join-compitition .img img {
     width: 75%;
+  }
+  .detailss {
+    margin: 1rem 0;
+  }
+  .join-compitition .date p {
+    width: 80%;
+  }
+  .join-compitition .date .btn-success {
+    width: 35%;
+  }
 }
-.detailss{
-  margin: 1rem 0;
-}
-.join-compitition .date p {
-  width: 80%;
-}
-.join-compitition .date .btn-success {
-  width: 35%;
-}
-}
-@media (max-width: 600px){
+@media (max-width: 600px) {
   .join-compitition .detailss h4 {
     font-size: 16px;
     margin: 0.5rem 0px;
-}
-.join-compitition .date p {
+  }
+  .join-compitition .date p {
     width: 95%;
-}
-.join-compitition .date .btn-success {
-  width: 45%;
-}
+  }
+  .join-compitition .date .btn-success {
+    width: 45%;
+  }
 }
 /* join-compitition */
 
 /* Connect-with-us */
-.start-form{
+.start-form {
   margin: 3rem 0;
 }
-.Connect-with-us .start-form h3{
-  font-size:35px ;
+.Connect-with-us .start-form h3 {
+  font-size: 35px;
   font-family: "bold";
 }
-.Connect-with-us .start-form h6{
-  font-size:15px ;
+.Connect-with-us .start-form h6 {
+  font-size: 15px;
   font-family: "regular";
 }
-.Connect-with-us .start-form form label{
-  font-size:15px ;
+.Connect-with-us .start-form form label {
+  font-size: 15px;
   font-family: "regular";
-  margin: .5rem 0;
+  margin: 0.5rem 0;
 }
-.Connect-with-us .start-form form .btn-dark{
-  font-size:15px ;
+.Connect-with-us .start-form form .btn-dark {
+  font-size: 15px;
   font-family: "regular";
   border-radius: 10px;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   margin: 1rem 0;
 }
-.Connect-with-us .start-form form .form-check .form-check-input{
+.Connect-with-us .start-form form .form-check .form-check-input {
   float: right;
-  margin-right: 0;
+  margin-right: 0 !important;
+  margin-left: 0.5rem;
 }
 .form-check {
   display: flex;
@@ -1816,11 +1817,55 @@ header .rank .icon svg {
 .Connect-with-us .img {
   margin: 3rem 0;
 }
-.Connect-with-us .img img{
+.Connect-with-us .img img {
   width: 100%;
 }
+.comunication .mail svg {
+  height: 38px;
+}
+.comunication .mail h3 {
+  font-family: "bold";
+  font-size: 30px;
+  margin: 2rem 0 0.5rem;
+}
+.comunication .mail p {
+  font-family: "regular";
+  font-size: 16px;
+}
+.comunication .mail a {
+  color: black;
+}
+.comunication .mail u {
+  font-family: "regular";
+  font-size: 16px;
+  color: black;
+}
+.form-check-input:checked {
+  background-color: rgba(6, 121, 126, 1);
+  border-color: rgba(6, 121, 126, 1);
+}
+@media (max-width: 600px) {
+  .Connect-with-us .img img {
+    width: 90%;
+}
+.comunication .mail svg {
+  height: 30px;
+}
+.comunication .mail h3 {
+  font-size: 24px;
+}
+.comunication .mail p {
+  font-size: 15px;
+}
+.Connect-with-us .img {
+  margin: 3rem auto;
+  text-align: center;
+}
+}
+/* .comunication {
+  display: flex;
+} */
 /* Connect-with-us */
-
 
 @media (max-width: 1500px) {
 }
