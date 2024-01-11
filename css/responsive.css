@@ -7,14 +7,23 @@
 }
 
 @media only screen and (max-width: 991.98px) {
+  .alltet {
+    flex-wrap: wrap;
+    font-size: 0.7rem;
+  }
+  .end-page{
+    width: 100%;
+  }
+  .alltet img {
+    width: 10%;
+  }
   .card_lists .card_list {
     margin-bottom: 4%;
   }
   #myChart2 {
     margin: 3% 0;
   }
-  .dropdown_filter .dropdown-toggle::after {
-  }
+  
   .more_cards .card .info {
     padding-bottom: 0;
   }
@@ -183,5 +192,28 @@
   }
   .detials_clerck .content .img {
     width: 54px;
+  }
+  .end-page {
+    width: 100%;
+    position: relative;
+  }
+  .text-footer {
+    flex-wrap: wrap;
+  }
+  .alltet {
+    display: block;
+    gap: unset;
+  }
+  .alltet p {
+    font-size: 0.7rem;
+  }
+  .alltet img {
+    width: 19%;
+  }
+  .text-footer p {
+    font-size: 0.7rem;
+  }
+  .slogn {
+    gap: unset;
   }
 }
